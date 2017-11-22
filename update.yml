@@ -1,0 +1,7 @@
+---
+- hosts: all
+  connection: ssh
+  become: yes
+  become_method: sudo    
+    - name: update the kernel
+        yum: update 
